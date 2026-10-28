@@ -12,6 +12,7 @@ import SoftSkills from "./component/SoftSkills";
 import Education from "./component/Education";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
+import Workstation from "./component/Workstation";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -42,13 +43,9 @@ function App() {
       <NavBar />
       <Body>
         <Hero />
-        <Wrapper>
-          <Skills />         
-          <SoftSkills />
-        </Wrapper>
-        <Wrapper>
-           <Education />
-        </Wrapper> 
+        <Skills />
+        <SoftSkills />
+        <Education /> 
           <Projects />        
           <Experience />  
           <Wrapper> 
@@ -56,6 +53,7 @@ function App() {
           </Wrapper>
           <Footer />   
       </Body>
+      <Workstation />
       </Router>
     </ThemeProvider>
   );
